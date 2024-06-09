@@ -39,6 +39,8 @@ import (
 
 	"github.com/gohugoio/hugo/markup/converter"
 	"github.com/gohugoio/hugo/markup/tableofcontents"
+
+	callout "gitlab.com/staticnoise/goldmark-callout"
 )
 
 const (
@@ -129,6 +131,10 @@ func newMarkdown(pcfg converter.ProviderConfig) goldmark.Markdown {
 
 	if cfg.Extensions.Table {
 		extensions = append(extensions, extension.Table)
+	}
+
+	if cfg.Extensions.Callout {
+		extensions = append(extensions, callout.CalloutExtention)
 	}
 
 	if cfg.Extensions.Strikethrough {

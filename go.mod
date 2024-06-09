@@ -70,6 +70,7 @@ require (
 	github.com/tdewolff/parse/v2 v2.7.13
 	github.com/yuin/goldmark v1.7.1
 	github.com/yuin/goldmark-emoji v1.0.2
+	gitlab.com/staticnoise/goldmark-callout v0.0.0-20240609004527-4633b79e7fe9
 	go.uber.org/automaxprocs v1.5.3
 	gocloud.dev v0.36.0
 	golang.org/x/exp v0.0.0-20221031165847-c99f073a8326
